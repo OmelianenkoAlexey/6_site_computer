@@ -1,0 +1,59 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+.header-container {}
+
+.header-menu {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__logo {
+
+        &-link {}
+
+        &-image {}
+    }
+
+}
+
+.header-menu__navbar {}
+
+.header-navbar {
+    &__btn {}
+
+    &__btn-row {}
+
+    &__list {
+        @include unlist;
+        display: flex;
+        gap: 55px;
+    }
+
+    &__item {}
+
+    &__link {}
+
+}
+
+
+.activ {}
+
+.header-menu__action {
+  }
+
+.header-menu__btn {
+        cursor: pointer;
+
+    width: 183px;
+        height: 44px;
+        line-height: 150%;
+        text-align: center;
+    
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        border-radius: 50px;
+}

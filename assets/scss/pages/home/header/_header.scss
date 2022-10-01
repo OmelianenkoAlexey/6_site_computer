@@ -1,0 +1,26 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.header {
+
+
+
+  // св-во привязано к высоте экрана
+  // display: flex;
+  // ставим блоки друг под другом
+  // flex-direction: column;
+  // *высота блока header на весь экран
+
+}
+
+
+.header-bg {}
+
+.header-bg__image {
+  display: block;
+  min-height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
