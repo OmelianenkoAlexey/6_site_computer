@@ -331,3 +331,122 @@ a {
 .header-box__item-description {
   line-height: 140%;
 }
+
+.header-section {
+  position: absolute;
+  bottom: 0;
+
+  width: 100vw;
+
+  background: #121212;
+}
+.header-section__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  gap: 20px;
+}
+.header-section__btn {
+  width: 169px;
+  height: 44px;
+
+  cursor: pointer;
+
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  background: -o-linear-gradient(355.22deg, #df5950 11.19%, #451046 93.72%);
+  background:    linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}
+.header-student {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  width: 250px;
+
+  gap: 10px;
+}
+.header-student__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header-student__item-description {
+  color: #ffffff;
+
+  line-height: 150%;
+}
+.header-student__item-number {
+  margin-left: auto;
+
+  color: #ffffff;
+
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.header-section__money {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  gap: 10px;
+}
+
+.header-money {
+  width: 714px;
+}
+.header-money__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  gap: 30px;
+}
+.header-money__scale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+
+  width: 714px;
+}
+.header-money__scale-full {
+  width: 440px;
+  height: 6px;
+
+  background: -o-linear-gradient(355.22deg, #df5950 11.19%, #451046 93.72%);
+  background:    linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}
+.header-money__scale-empty {
+  width: 274px;
+  height: 6px;
+
+  background: #ffffff;
+}
+.header-money__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
