@@ -36,24 +36,26 @@
 
     &__item {}
 
-    &__link {}
+    &__link {
+        line-height: 150%;
+    }
 
 }
 
 
 .activ {}
 
-.header-menu__action {
-  }
+.header-menu__action {}
 
 .header-menu__btn {
-        cursor: pointer;
-
+    cursor: pointer;
+    color: #FFFFFF;
     width: 183px;
-        height: 44px;
-        line-height: 150%;
-        text-align: center;
-    
-        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
-        border-radius: 50px;
+    height: 44px;
+    line-height: 150%;
+    text-align: center;
+
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    border: none;
 }

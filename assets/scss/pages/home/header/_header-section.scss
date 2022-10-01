@@ -1,0 +1,62 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+.header-section {
+
+    &__action {}
+
+    &__btn {}
+
+    &__student {}
+
+}
+
+
+
+
+.header-student {
+    &__item {
+
+        &-description {}
+
+        &-number {}
+    }
+
+
+
+}
+
+
+
+.header-section__money {}
+
+.header-money {
+
+    &__item {
+
+        &-description {}
+
+        &-number {}
+
+    }
+
+
+
+    &__scale {
+        &-full {}
+
+        &-empty {}
+
+    }
+
+
+
+    &__number {
+
+        &-item {}
+    }
+
+
+
+}
