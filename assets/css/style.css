@@ -277,6 +277,13 @@ a {
 .header-navbar__link {
   line-height: 150%;
 }
+.header-navbar__link:hover {
+  color: #c89afc;
+}
+
+.activ {
+  color: #c89afc;
+}
 
 .header-menu__btn {
   width: 183px;

@@ -32,6 +32,8 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 20px 55px;
+       
+       
             @include sm {
                   display: none;
                 }
@@ -41,10 +43,15 @@
 
     &__link {
         line-height: 150%;
+        &:hover {
+                color: #C89AFC;
+            }
     }
 }
 
-.activ {}
+.activ {
+            color: #C89AFC;
+}
 
 .header-menu__action {}
 
