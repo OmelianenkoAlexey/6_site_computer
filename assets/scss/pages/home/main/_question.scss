@@ -1,0 +1,23 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.main {}
+
+.main-bg {}
+
+.question {
+    &__picture {}
+
+    &__image {}
+
+    &-content {
+
+        &__title {}
+
+        &__description {}
+
+    }
+
+
+
+}
