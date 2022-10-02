@@ -29,8 +29,13 @@
     &__list {
         @include unlist;
         display: flex;
-        gap: 55px;
-    }
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px 55px;
+            @include sm {
+                  display: none;
+                }
+     }
 
     &__item {}
 
