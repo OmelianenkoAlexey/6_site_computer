@@ -34,6 +34,11 @@
         background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
         border-radius: 50px;
         border: none;
+            transition: 0.5s;
+            
+                &:hover {
+                    box-shadow: 0 0 10px #C89AFC;
+                }
     }
 
     &__student {}
