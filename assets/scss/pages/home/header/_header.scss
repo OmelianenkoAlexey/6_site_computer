@@ -2,7 +2,7 @@
 @use "../../../mixins" as *;
 
 .header {
-
+// position: relative;
 
 
   // св-во привязано к высоте экрана
@@ -12,7 +12,6 @@
   // *высота блока header на весь экран
 
 }
-
 
 .header-bg {}
 
