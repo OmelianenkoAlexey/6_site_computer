@@ -1,20 +1,60 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-.main {}
+.main {
+    // background-color: red;
+    position: relative;
+    top: 0;
+}
 
-.main-bg {}
+.main-bg {
+    background-color: #7C6AFA;
+}
 
 .question {
-    &__picture {}
+    // margin-top: 200px;
+   display: flex;
+align-items: center;
+   gap: 139px;
 
-    &__image {}
+    &__picture {
+        position: relative;
+         width: 526px;
+    height: 499px;
+    // border: 30px;
+    border: 30px solid blue;
+    border-width: 30px;
+  
+    border-color: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+      border-color: #7C6AFA;
+
+    // background-color: green;
+    }
+
+    &__image {
+        width: 100%;
+        position: absolute;
+        bottom: -60px;
+    }
 
     &-content {
+        max-width: 636px;
 
-        &__title {}
+        &__title {
+            margin: 0;
+            font-weight: 700;
+                font-size: 48px;
+                line-height: 140%;
+                color: #FFFFFF;
+                padding-bottom: 45px;
+        }
 
-        &__description {}
+        &__description {
+            font-weight: 400;
+                font-size: 16px;
+                line-height: 160%;
+                color: #FFFFFF;
+        }
 
     }
 
