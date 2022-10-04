@@ -507,7 +507,7 @@ a {
 }
 .main-bg__image {
   width: 100%;
-  height: 250vh;
+  height: 300vh;
 
   -o-object-fit: cover;
      object-fit: cover;
