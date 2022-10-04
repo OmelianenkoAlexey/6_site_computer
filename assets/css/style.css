@@ -532,16 +532,16 @@ a {
   border-color: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
   border-color: #7c6afa;
 }
-.question__image {
+.question__picture__image {
   position: absolute;
   bottom: -60px;
 
   width: 100%;
 }
-.question-content {
+.question__picture-content {
   max-width: 636px;
 }
-.question-content__title {
+.question__picture-content__title {
   margin: 0;
   padding-bottom: 45px;
 
@@ -551,7 +551,7 @@ a {
   font-weight: 700;
   line-height: 140%;
 }
-.question-content__description {
+.question__picture-content__description {
   color: #ffffff;
 
   font-size: 16px;
@@ -632,14 +632,17 @@ a {
   .header-money__number {
     width: 300px;
   }
+  .question {
+    padding-top: 100px;
+  }
   .question__picture {
     min-width: 350px;
     height: 350px;
   }
-  .question__image {
+  .question__picture__image {
     bottom: -40px;
   }
-  .question-content__title {
+  .question__picture-content__title {
     text-align: center;
 
     font-size: 40px;
