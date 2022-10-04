@@ -700,6 +700,8 @@ a {
 }
 @media (max-width: 575.8px) {
   .header-content__title {
+    padding-top: 0;
+
     text-align: center;
 
     font-size: 40px;
