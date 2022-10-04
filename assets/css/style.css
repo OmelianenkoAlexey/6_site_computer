@@ -724,6 +724,7 @@ a {
     width: 300px;
   }
   .question {
+    margin-bottom: 100px;
     padding-top: 100px;
   }
   .question__picture {
