@@ -4,6 +4,8 @@
 .header-container {}
 
 .header-menu {
+    // background-color: #fff;
+    min-height: 148px;
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -33,12 +35,17 @@
     &__btn-row {}
 
     &__list {
+        max-width: 745px;
         @include unlist;
-        display: flex;
+     display: grid;
+
+grid-template-columns: repeat(6, 1fr);
         justify-content: center;
-        flex-wrap: wrap;
         gap: 20px 55px;
        
+        @include xl {
+             grid-template-columns: repeat(3, 1fr);
+            }
        
             @include sm {
                   display: none;
