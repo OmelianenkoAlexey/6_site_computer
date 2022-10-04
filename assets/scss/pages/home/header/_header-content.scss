@@ -2,10 +2,10 @@
 @use "../../../mixins" as *;
 
 .header-content {
-
-    // position: relative;
     min-height: 83vh;
+
     &__title {
+      padding-top: 100px;
         font-weight: 700;
         font-size: 64px;
         line-height: 140%;

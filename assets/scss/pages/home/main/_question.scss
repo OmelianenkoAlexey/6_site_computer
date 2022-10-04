@@ -3,38 +3,61 @@
 
 .main {
     // background-color: red;
-    position: relative;
-    top: 0;
+    // position: relative;
+    // top: 0;
+    // background-color: red;
+    background-image: url(../../../../img/main-bg.png);
+    background-size: cover;
 }
 
 .main-bg {
-    background-color: #7C6AFA;
+    position: absolute;
+    z-index: -1;
+
+    &__image {
+        width: 100%;
+    }
 }
 
 .question {
-    // margin-top: 200px;
-   display: flex;
-align-items: center;
-   gap: 139px;
+    padding-top: 200px;
+    display: flex;
+    align-items: center;
+    gap: 139px;
 
-    &__picture {
-        position: relative;
-         width: 526px;
+    @include xl {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include sm {
+        padding-top: 100px;
+    }
+}
+
+&__picture {
+    position: relative;
+    min-width: 526px;
     height: 499px;
-    // border: 30px;
     border: 30px solid blue;
     border-width: 30px;
-  
     border-color: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
-      border-color: #7C6AFA;
+    border-color: #7C6AFA;
 
-    // background-color: green;
+    @include sm {
+        min-width: 350px;
+        height: 350px;
     }
+
 
     &__image {
         width: 100%;
         position: absolute;
         bottom: -60px;
+
+        @include sm {
+            bottom: -40px;
+        }
     }
 
     &-content {
@@ -43,17 +66,22 @@ align-items: center;
         &__title {
             margin: 0;
             font-weight: 700;
-                font-size: 48px;
-                line-height: 140%;
-                color: #FFFFFF;
-                padding-bottom: 45px;
+            font-size: 48px;
+            line-height: 140%;
+            color: #FFFFFF;
+            padding-bottom: 45px;
+
+            @include sm {
+                font-size: 40px;
+                text-align: center;
+            }
         }
 
         &__description {
             font-weight: 400;
-                font-size: 16px;
-                line-height: 160%;
-                color: #FFFFFF;
+            font-size: 16px;
+            line-height: 160%;
+            color: #FFFFFF;
         }
 
     }
