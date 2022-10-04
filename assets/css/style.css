@@ -228,6 +228,10 @@ a {
           box-shadow: 0 0 7px #ff6336;
 }
 
+.header {
+  min-height: 100vh;
+}
+
 .header-bg__image {
   position: absolute;
   z-index: -1;
@@ -322,12 +326,11 @@ a {
           box-shadow: 0 0 10px #c89afc;
 }
 
-.header-content {
-  min-height: 79vh;
-}
 .header-content__title {
   max-width: 700px;
-  padding-top: 100px;
+  margin: 0;
+  margin-bottom: 50px;
+  padding-top: 50px;
 
   font-size: 64px;
   font-weight: 700;

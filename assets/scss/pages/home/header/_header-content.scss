@@ -2,14 +2,16 @@
 @use "../../../mixins" as *;
 
 .header-content {
-    min-height: 79vh;
-
+// margin-top: auto;
+// margin-bottom: auto;
     &__title {
-        padding-top: 100px;
+        padding-top: 50px;
+        margin: 0;
         font-weight: 700;
         font-size: 64px;
         line-height: 140%;
         max-width: 700px;
+        margin-bottom: 50px;
 
         @include lg {
             font-size: 50px;
