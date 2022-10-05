@@ -54,6 +54,7 @@
 
 
     &-box {
+        position: relative;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
@@ -72,23 +73,25 @@
         // &__scale {}
 
         &__item {
+
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             min-height: 95px;
-            // width: 364px;
             // background-color: red;
             border: 3px solid white;
             padding-right: 60px;
-    
+
+
+
 
             @include md-min {
-                     align-items: flex-end;
-                }
+                align-items: flex-end;
+            }
 
-                                  @include md {
-                                     padding-left: 60px;
-                                  }
+            @include md {
+                padding-left: 60px;
+            }
 
             &--md {
                 padding-left: 60px;
@@ -132,7 +135,7 @@
                 height: 95px;
                 width: 364px;
                 background-color: green;
-                border: 3px solid white;
+                // border: 3px solid white;
 
                 @include md {
                     display: none;
@@ -141,6 +144,19 @@
 
         }
     }
+}
+
+.program-box__item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    //   margin-left: -50vw;
+
+    //   background-color: #808080;
+    background-color: red;
 }
 
 
