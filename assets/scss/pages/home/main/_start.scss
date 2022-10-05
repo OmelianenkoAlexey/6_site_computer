@@ -2,7 +2,11 @@
 @use "../../../mixins" as *;
 
 .start {
+margin-bottom: 200px;
 
+@include sm {
+    margin-bottom: 100px;
+}
     &-content {
         margin-bottom: 80px;
 
