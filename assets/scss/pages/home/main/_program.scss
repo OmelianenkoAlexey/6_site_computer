@@ -1,0 +1,205 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+
+
+
+.program {
+    display: flex;
+    gap: 90px;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 200px;
+
+
+    @include sm {
+        margin-bottom: 100px;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &__picture {}
+
+        &__image {}
+
+        &__title {
+            margin: 0;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 140%;
+            text-align: center;
+            color: #FFFFFF;
+
+            @include sm {
+                font-size: 40px;
+            }
+        }
+
+        &__description {
+            max-width: 400px;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+
+    }
+
+
+
+    &-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        @include md {
+            grid-template-columns: 1fr;
+        }
+
+        // grid-template-areas: ;
+        // "a1 a2"
+        // "a3 a4"
+        // "a1 a2";
+
+        // grid-template-columns: 580px 1fr;
+
+        // grid-area: dsc;
+        // &__scale {}
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 95px;
+            // width: 364px;
+            // background-color: red;
+            border: 3px solid white;
+            padding-right: 60px;
+    
+
+            @include md-min {
+                     align-items: flex-end;
+                }
+
+                                  @include md {
+                                     padding-left: 60px;
+                                  }
+
+            &--md {
+                padding-left: 60px;
+                align-items: flex-start;
+
+                @include md-min {}
+            }
+
+
+            &-week {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 160%;
+                color: #FFFFFF;
+                opacity: 0.5;
+            }
+
+            &-description {
+
+                max-width: 228px;
+
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 160%;
+                color: #FFFFFF;
+
+                @include md-min {
+                    text-align: end;
+                }
+            }
+
+        }
+
+        &-description--md {
+            text-align: start;
+
+
+
+
+            &--zero {
+                height: 95px;
+                width: 364px;
+                background-color: green;
+                border: 3px solid white;
+
+                @include md {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+// .program-box>div:nth-of-type(1) {
+//     grid-area: a1;
+// }  
+// .program-box>div:nth-of-type(2) {
+//     grid-area: a2;
+// }
+
+// .program-box>div:nth-of-type(3) {
+//     grid-area: a3;
+// }
+
+// .program-box>div:nth-of-type(4) {
+//     grid-area: a5;
+// }
+
+// .program-box>div:nth-of-type(5) {
+//     grid-area: a5;
+// }
+
+// .program-box>div:nth-of-type(6) {
+//     grid-area: a6;
+// }
+
+// .program-box>div:nth-of-type(7) {
+//     grid-area: a7;
+// }
+
+// .program-box>div:nth-of-type(8) {
+//     grid-area: a8;
+// }
+
+// .program-box>div:nth-of-type(9) {
+//     grid-area: a9;
+// }
+
+// .program-box>div:nth-of-type(10) {
+//     grid-area: a10;
+// }
+
+// .program-box>div:nth-of-type(11) {
+//     grid-area: a11;
+// }
+
+// .program-box>div:nth-of-type(12) {
+//     grid-area: a12;
+// }
+
+// .program-box>div:nth-of-type(13) {
+//     grid-area: a13;
+// }
+
+// .program-box>div:nth-of-type(14) {
+//     grid-area: a14;
+// }

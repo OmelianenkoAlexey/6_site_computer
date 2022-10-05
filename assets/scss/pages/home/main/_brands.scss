@@ -2,7 +2,11 @@
 @use "../../../mixins" as *;
 
 .brands {
+margin-bottom: 200px;
 
+    @include sm {
+        margin-bottom: 100px;
+    }
     &-content {
         display: flex;
         gap: 20px;
