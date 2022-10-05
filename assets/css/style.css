@@ -246,6 +246,8 @@ a {
 }
 
 .header-menu {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,10 +301,6 @@ a {
   color: #c89afc;
 }
 
-.activ {
-  color: #c89afc;
-}
-
 .header-menu__btn {
   width: 183px;
   height: 44px;
@@ -324,6 +322,68 @@ a {
 .header-menu__btn:hover {
   -webkit-box-shadow: 0 0 10px #c89afc;
           box-shadow: 0 0 10px #c89afc;
+}
+.header-navbar__btn {
+  position: relative;
+
+  width: 30px;
+  height: 22.5px;
+
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+       -o-transition: 0.5s ease-in-out;
+          transition: 0.5s ease-in-out;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+.header-navbar__btn span {
+  position: absolute;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 5px;
+
+  -webkit-transition: 0.25s ease-in-out;
+       -o-transition: 0.25s ease-in-out;
+          transition: 0.25s ease-in-out;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+
+  opacity: 1;
+  border-radius: 3px;
+  background: #7c6afa;
+}
+.header-navbar__btn span:nth-child(1) {
+  top: 0;
+}
+.header-navbar__btn span:nth-child(2) {
+  top: 9px;
+}
+.header-navbar__btn span:nth-child(3) {
+  top: 18px;
+}
+.header-navbar__btn.open span:nth-child(1) {
+  top: 9px;
+
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.header-navbar__btn.open span:nth-child(2) {
+  left: -30px;
+
+  opacity: 0;
+}
+.header-navbar__btn.open span:nth-child(3) {
+  top: 9px;
+
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
 }
 
 .header-content__title {
@@ -720,6 +780,16 @@ a {
   font-weight: 400;
   line-height: 160%;
 }
+@media (min-width: 768px) {
+  .activ {
+    color: #c89afc;
+  }
+}
+@media (min-width: 992px) {
+  .header-navbar__btn {
+    display: none;
+  }
+}
 @media (max-width: 1199.8px) {
   .header-navbar__list {
     grid-template-columns: repeat(3, 1fr);
@@ -756,7 +826,27 @@ a {
 }
 @media (max-width: 767.8px) {
   .header-navbar__list {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+
     display: none;
+
+    height: 50vh;
+
+    background-color: #121212;
+    -webkit-box-shadow: 0 0 10px #7c6afa;
+            box-shadow: 0 0 10px #7c6afa;
+  }
+  .header-navbar__item {
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 8px;
+
+    border-radius: 10px;
+    background-color: #7c6afa;
   }
   .header-section__money {
     -webkit-box-align: center;
