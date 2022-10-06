@@ -879,7 +879,21 @@ a {
 
   grid-template-columns: repeat(2, 1fr);
 }
+.program-box::after {
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  width: 2px;
+  height: 100%;
+
+  content: "";
+
+  background-color: #808080;
+}
 .program-box__item {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -893,15 +907,56 @@ a {
 
   min-height: 95px;
   padding-right: 60px;
-
-  border: 3px solid white;
 }
-.program-box__item--md {
+.program-box__item::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  width: 40px;
+  height: 2px;
+
+  content: "";
+
+  background-color: #808080;
+}
+.program-box__item--lt {
   -webkit-box-align: start;
   align-items: flex-start;
   -ms-flex-align: start;
 
   padding-left: 60px;
+}
+.program-box__item--lt::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  width: 40px;
+  height: 2px;
+
+  content: "";
+
+  background-color: #808080;
+}
+.program-box__item--rt {
+  -webkit-box-align: start;
+  align-items: flex-start;
+  -ms-flex-align: start;
+
+  padding-left: 60px;
+}
+.program-box__item--rt::after {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 40px;
+  height: 2px;
+
+  content: "";
+
+  background-color: #808080;
 }
 .program-box__item-week {
   opacity: 0.5;
@@ -920,27 +975,20 @@ a {
   font-weight: 400;
   line-height: 160%;
 }
-.program-box-description--md {
+.program-box__item-description--lf {
+  text-align: end;
+}
+
+.program-box__item-description--rt {
   text-align: start;
 }
-.program-box-description--md--zero {
+
+.program-box__item--zero {
   width: 364px;
   height: 95px;
 
+  border: 3px solid white;
   background-color: green;
-}
-
-.program-box__item::after {
-  position: absolute;
-  top: 0;
-  left: 50%;
-
-  width: 5px;
-  height: 100%;
-
-  content: "";
-
-  background-color: red;
 }
 
 @media (min-width: 768px) {
@@ -951,9 +999,6 @@ a {
     -webkit-box-align: end;
     align-items: flex-end;
     -ms-flex-align: end;
-  }
-  .program-box__item-description {
-    text-align: end;
   }
 }
 
@@ -1058,7 +1103,7 @@ a {
   .program-box__item {
     padding-left: 60px;
   }
-  .program-box-description--md--zero {
+  .program-box__item--zero {
     display: none;
   }
 }

@@ -1,17 +1,12 @@
 @use "../../../presets" as *;
 @use "../../../mixins" as *;
 
-
-
-
 .program {
     display: flex;
     gap: 90px;
     flex-direction: column;
     align-items: center;
-
     margin-bottom: 200px;
-
 
     @include sm {
         margin-bottom: 100px;
@@ -48,10 +43,7 @@
             color: #FFFFFF;
             opacity: 0.5;
         }
-
     }
-
-
 
     &-box {
         position: relative;
@@ -62,28 +54,42 @@
             grid-template-columns: 1fr;
         }
 
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background-color: #808080;
+        }
+
         // grid-template-areas: ;
         // "a1 a2"
         // "a3 a4"
         // "a1 a2";
-
         // grid-template-columns: 580px 1fr;
-
         // grid-area: dsc;
         // &__scale {}
 
         &__item {
-
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             min-height: 95px;
-            // background-color: red;
-            border: 3px solid white;
+            // border: 3px solid white;
             padding-right: 60px;
 
-
-
+            &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                top: 50%;
+                width: 40px;
+                height: 2px;
+                background-color: #808080;
+            }
 
             @include md-min {
                 align-items: flex-end;
@@ -93,13 +99,34 @@
                 padding-left: 60px;
             }
 
-            &--md {
+            &--lt {
                 padding-left: 60px;
                 align-items: flex-start;
 
-                @include md-min {}
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    width: 40px;
+                    height: 2px;
+                    background-color: #808080;
+                }
             }
 
+            &--rt {
+                padding-left: 60px;
+                align-items: flex-start;
+                    &::after {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            width: 40px;
+                            height: 2px;
+                            background-color: #808080;
+                        }
+            }
 
             &-week {
                 font-weight: 400;
@@ -118,50 +145,31 @@
                 line-height: 160%;
                 color: #FFFFFF;
 
-                @include md-min {
-                    text-align: end;
-                }
+                @include md-min {}
             }
-
-        }
-
-        &-description--md {
-            text-align: start;
-
-
-
-
-            &--zero {
-                height: 95px;
-                width: 364px;
-                background-color: green;
-                // border: 3px solid white;
-
-                @include md {
-                    display: none;
-                }
-            }
-
         }
     }
 }
 
-.program-box__item::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 5px;
-    height: 100%;
-    //   margin-left: -50vw;
 
-    //   background-color: #808080;
-    background-color: red;
+.program-box__item-description--lf {
+    text-align: end;
 }
 
+.program-box__item-description--rt {
+    text-align: start;
+}
 
+.program-box__item--zero {
+    height: 95px;
+    width: 364px;
+    background-color: green;
+    border: 3px solid white;
 
-
+    @include md {
+        display: none;
+    }
+}
 
 
 
