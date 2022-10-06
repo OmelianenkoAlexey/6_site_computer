@@ -62,6 +62,9 @@
             width: 2px;
             height: 100%;
             background-color: #808080;
+                @include md {
+                        display: none;
+                    }
         }
 
         // grid-template-areas: ;
@@ -81,17 +84,7 @@
             // border: 3px solid white;
             padding-right: 60px;
 
-            &::after {
-                content: "";
-                position: absolute;
-                right: 0;
-                top: 50%;
-                width: 40px;
-                height: 2px;
-                background-color: #808080;
-            }
-
-            @include md-min {
+                   @include md-min {
                 align-items: flex-end;
             }
 
@@ -99,7 +92,7 @@
                 padding-left: 60px;
             }
 
-            &--lt {
+            &--lf {
                 padding-left: 60px;
                 align-items: flex-start;
 
@@ -111,12 +104,15 @@
                     width: 40px;
                     height: 2px;
                     background-color: #808080;
+                        @include md {
+                                display: none;
+                            }
                 }
             }
 
             &--rt {
                 padding-left: 60px;
-                align-items: flex-start;
+               align-items: flex-end;
                     &::after {
                             content: "";
                             position: absolute;
@@ -125,6 +121,9 @@
                             width: 40px;
                             height: 2px;
                             background-color: #808080;
+                                @include md {
+                                        display: none;
+                                    }
                         }
             }
 
@@ -134,7 +133,10 @@
                 line-height: 160%;
                 color: #FFFFFF;
                 opacity: 0.5;
+              
             }
+
+           
 
             &-description {
 
@@ -163,8 +165,7 @@
 .program-box__item--zero {
     height: 95px;
     width: 364px;
-    background-color: green;
-    border: 3px solid white;
+    // border: 3px solid white;
 
     @include md {
         display: none;
