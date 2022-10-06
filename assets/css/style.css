@@ -567,7 +567,7 @@ a {
 }
 .main-bg__image {
   width: 100%;
-  height: 700vh;
+  height: 900vh;
 
   -o-object-fit: cover;
      object-fit: cover;
@@ -884,12 +884,13 @@ a {
   top: 0;
   left: 50%;
 
-  width: 2px;
+  width: 6px;
   height: 100%;
 
   content: "";
 
-  background-color: #808080;
+  background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
+  background:    linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
 }
 .program-box__item {
   position: relative;

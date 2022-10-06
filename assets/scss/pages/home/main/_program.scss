@@ -59,9 +59,9 @@
             position: absolute;
             top: 0;
             left: 50%;
-            width: 2px;
+            width: 6px;
             height: 100%;
-            background-color: #808080;
+            background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
                 @include md {
                         display: none;
                     }
