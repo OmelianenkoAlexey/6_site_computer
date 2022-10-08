@@ -567,7 +567,7 @@ a {
 }
 .main-bg__image {
   width: 100%;
-  height: 1000vh;
+  height: 1100vh;
 
   -o-object-fit: cover;
      object-fit: cover;
@@ -990,6 +990,8 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+  margin-bottom: 70px;
 
   gap: 40px;
 }
