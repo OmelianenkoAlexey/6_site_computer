@@ -18,6 +18,10 @@
             flex-wrap: wrap;
         }
 
+                  @include sm {
+                    gap: 0px;
+                  }
+
         &__picture {}
 
         &__image {}

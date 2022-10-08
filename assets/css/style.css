@@ -1284,6 +1284,9 @@ a {
   .teachers {
     margin-bottom: 100px;
   }
+  .teachers-content {
+    gap: 0;
+  }
   .teachers-content__title {
     text-align: center;
 
