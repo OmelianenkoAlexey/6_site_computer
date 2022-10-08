@@ -39,7 +39,6 @@
         display: flex;
         justify-content: space-around;
         gap: 50px;
-        background-color: green;
 
         @include md {
             flex-wrap: wrap;
@@ -50,7 +49,6 @@
             flex-direction: column;
             align-items: center;
             gap: 15px;
-            background-color: red;
 
             &-name {
                 margin: 0;
