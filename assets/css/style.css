@@ -1187,11 +1187,11 @@ a {
   .activ {
     color: #c89afc;
   }
-}
-@media (min-width: 992px) {
   .header-navbar__btn {
     display: none;
   }
+}
+@media (min-width: 992px) {
   .brands-box__item--md {
     border-bottom: none;
   }

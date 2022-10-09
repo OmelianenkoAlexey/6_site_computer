@@ -130,7 +130,7 @@
     transform: rotate(0deg);
     // гамбургер отображается менше 768px
 
-    @include lg-min {
+    @include md-min {
         display: none;
     }
 
