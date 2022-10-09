@@ -1332,6 +1332,7 @@ a {
 }
 @media (max-width: 575.8px) {
   .header-content__title {
+    margin-bottom: 0;
     padding-top: 0;
 
     text-align: center;
