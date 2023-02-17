@@ -254,6 +254,98 @@ a {
      object-fit: cover;
 }
 
+.div {
+  position: absolute;
+  z-index: 3;
+  top: 20%;
+  left: 50%;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+
+  border-radius: 100px;
+  background: -o-linear-gradient(355.74deg, #c89afc 9.51%, #7c6afa 90.23%);
+  background:    linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+
+.none {
+  display: none;
+}
+
+.form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+      flex-direction: column;
+
+  gap: 10px;
+}
+
+input {
+  height: 40px;
+  padding: 20px;
+
+  border: none;
+  border-radius: 20px;
+}
+
+.contacts-form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -ms-flex-align: center;
+
+  height: 40px;
+  padding: 20px;
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+}
+.contacts-form__button:hover {
+  color: white;
+  background-color: black;
+}
+
+.black {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  opacity: 0.8;
+  background-color: black;
+}
+
+.header-arrow {
+  position: fixed;
+  z-index: 3;
+  right: 0;
+  bottom: 4%;
+
+  padding: 5px;
+}
+
 .header-menu {
   position: relative;
 
@@ -1274,6 +1366,9 @@ a {
 
     border-radius: 10px;
     background-color: #7c6afa;
+  }
+  .header-menu__action {
+    display: none;
   }
   .header-section__money {
     -webkit-box-align: center;

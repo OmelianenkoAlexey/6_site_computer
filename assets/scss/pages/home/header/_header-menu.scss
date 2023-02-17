@@ -8,6 +8,7 @@
     // background-color: #fff;
     min-height: 148px;
     display: flex;
+    
     gap: 20px;
     justify-content: space-between;
     align-items: center;
@@ -91,7 +92,11 @@
     }
 }
 
-.header-menu__action {}
+.header-menu__action {
+    @include md {
+        display: none;
+    }
+}
 
 .header-menu__btn {
     cursor: pointer;

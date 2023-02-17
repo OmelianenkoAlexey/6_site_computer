@@ -13,13 +13,31 @@
 </head>
 
 <body>
-
+    <div class="div none">
+        <form class="form-header none" action="">
+            <div>
+                <input type="text" name="text" placeholder="Логін">
+            </div>
+            <div>
+                <input type="password" name="имя" placeholder="Пароль">
+            </div>
+            <div>
+                <button class="contacts-form__button" type="submit">Відправити</button>
+            </div>
+        </form>
+    </div>
+    <div class="black none"></div>
     <header class="header">
+        <div class="header-arrow">
+            <a class="header-arrow__link" href="#arrow">
+                <img id="arrowColor" src="assets/img/arrow2.gif" width=" 50px" alt="#">
+            </a>
+        </div>
         <div class="header-bg">
             <img class="header-bg__image" src="assets/img/header-bg.png" alt="">
         </div>
         <!-- <div class="header-container"> -->
-        <div class="header-menu container">
+        <div id="arrow" class="header-menu container">
             <div class="header-menu__logo">
                 <a class="header-menu__logo-link" href="">
                     <img class="header-menu__logo-image" src="assets/img/header-logo.svg" alt="logo">
@@ -40,7 +58,7 @@
                     </li>
 
                     <li class="header-navbar__item">
-                        <a class="header-navbar__link" href="">Курсы</a>
+                        <a class="header-navbar__link" href="#courses">Курсы</a>
                     </li>
 
                     <li class="header-navbar__item">
@@ -48,7 +66,7 @@
                     </li>
 
                     <li class="header-navbar__item">
-                        <a class="header-navbar__link" href="">Преподаватели</a>
+                        <a class="header-navbar__link" href="#teacher">Преподаватели</a>
                     </li>
 
                     <li class="header-navbar__item">
@@ -56,7 +74,7 @@
                     </li>
 
                     <li class="header-navbar__item">
-                        <a class="header-navbar__link" href="">Контакты</a>
+                        <a class="header-navbar__link" href="#contact">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -74,22 +92,22 @@
                 <div class="header-content__box header-box">
 
                     <div class="header-box__item">
-                        <div class="header-box__item-number">18</div>
+                        <div class="header-box__item-number">5</div>
                         <div class="header-box__item-description">Дней</div>
                     </div>
 
                     <div class="header-box__item">
-                        <div class="header-box__item-number">18</div>
+                        <div class="header-box__item-number">6</div>
                         <div class="header-box__item-description">Часов</div>
                     </div>
 
                     <div class="header-box__item">
-                        <div class="header-box__item-number">18</div>
+                        <div id="minutes" class="header-box__item-number">59</div>
                         <div class="header-box__item-description">Минут</div>
                     </div>
 
                     <div class="header-box__item">
-                        <div class="header-box__item-number">18</div>
+                        <div id="sec" class="header-box__item-number">0</div>
                         <div class="header-box__item-description">Секунд</div>
                     </div>
                 </div>
@@ -321,7 +339,7 @@
         </section>
 
 
-        <section class="program container">
+        <section id="courses" class="program container">
 
             <div class="program-content">
                 <div class="program-content__picture">
@@ -386,7 +404,7 @@
             </div>
         </section>
 
-        <section class="teachers container">
+        <section id="teacher" class="teachers container">
             <div class="teachers-content">
                 <div class="teachers-content__picture">
                     <img class="teachers-content__image" src="assets/img/teachers-logo.svg" alt="logo">
@@ -432,7 +450,7 @@
         </section>
     </main>
 
-    <footer class="footer container">
+    <footer id="contact"  class="footer container">
 
         <h2 class="footer__title">Статьи каждую неделю</h2>
         <div class="footer__description">Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
